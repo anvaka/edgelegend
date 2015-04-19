@@ -100,7 +100,7 @@ function createLegend(renderer, folderName, legend) {
 
   function toggle(name) {
     return [
-      '<span>',
+      '<span style="-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">',
       '<input type="checkbox" name="checkbox" id="' + name + '" class="toggle" value="value" checked>',
       '<label for="' + name + '">' + name + '</label>',
       '</span>'
