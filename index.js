@@ -62,7 +62,7 @@ function createLegend(renderer, folderName, legend) {
     graph.beginUpdate();
     for (var i = 0; i < links.length; ++i) {
       var link = links[i];
-      graph.addLink(link.fromId, link.toId);
+      graph.addLink(link.fromId, link.toId, link.data);
     }
     graph.endUpdate();
 
