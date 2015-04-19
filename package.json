@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ngraph"
+    "ngraph",
+    "ngraph.pixel",
+    "dat.gui",
+    "edge",
+    "legend"
   ],
   "author": "Andrei Kashcha",
   "license": "MIT",
