@@ -7,14 +7,14 @@ to see the demo of this plugin.
 
 ``` js
 var renderGraph = require('ngraph.pixel');
+var createSetings = require('config.pixel');
 var createLegend = require('edgelegend');
 
-var renderer = renderGraph(graph, {
-  settings: true // show the settings ui
-});
+var renderer = renderGraph(graph);
+var settings = createSettings(renderer);
 
 // add a new group called "Groups", with two colors:
-createLegend(renderer, 'Groups', [{
+createLegend(settings, 'Groups', [{
   name: 'First',
   color: 0xff0000,
   filter: function(link) {

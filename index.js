@@ -1,7 +1,7 @@
 module.exports = createLegend;
 
-function createLegend(renderer, folderName, legend) {
-  var allSettings = renderer.settings();
+function createLegend(allSettings, folderName, legend) {
+  var renderer = allSettings.renderer();
   var gui = allSettings.gui();
   var group = gui.addFolder(folderName);
   var model = Object.create(null);
