@@ -1,6 +1,6 @@
 {
   "name": "edgelegend",
-  "version": "0.1.3",
+  "version": "2.0.0",
   "description": "Creates dat.gui legend to change ngraph.pixel edges",
   "main": "index.js",
   "scripts": {
