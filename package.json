@@ -15,6 +15,9 @@
   ],
   "author": "Andrei Kashcha",
   "license": "MIT",
+  "peerDependencies": {
+    "ngraph.pixel": "2.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/anvaka/edgelegend"

@@ -49,7 +49,12 @@ function createLegend(allSettings, folderName, legend) {
       for (var i = 0; i < legend.length; ++i) {
         var item = legend[i];
         if (!item.filter(link)) continue;
-        renderer.linkColor(link.id, model[item.name]);
+        var ui = renderer.getLink(link.id);
+        if (ui) {
+          ui.fromColor = model[item.name];
+          ui.toColor = model[item.name];
+        }
+        return;
       }
     }
   }
